@@ -1,0 +1,139 @@
+.mp-cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: calc(100% - 40px);
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    padding: 1.5em;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50%);
+    transition: .5s;
+    z-index: 999999;display: none;
+}
+
+.mp-cookie-consent a,
+.mp-cookie-consent p {
+    font-family: inherit;
+}
+
+.mp-cookie-consent.visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.mp-cookie-consent__text {
+    margin-bottom: 1em;
+}
+
+.mp-cookie-consent__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mp-cookie-consent__text {
+
+}
+
+.mp-cookie-consent__preferences {
+}
+
+.mp-cookie-consent__preferences-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.mp-cookie-consent__preferences-item:last-child {
+    margin-bottom: 0;
+}
+
+.mp-cookie-consent__text-title,
+.mp-cookie-consent__preferences-item-label {
+    font-weight: 700;
+    margin: 0 0 5px;
+    line-height: 1;
+}
+
+.mp-cookie-consent__text-title {
+    margin-bottom: 10px;
+}
+
+.mp-cookie-consent__text-description,
+.mp-cookie-consent__preferences-item-description {
+    font-size: .875em;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.mp-cookie-consent__switch {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    flex: 0;
+}
+
+.mp-cookie-consent__switch.disabled {
+    opacity: .5;
+}
+
+.mp-cookie-consent__switch:hover {
+    cursor: pointer;
+}
+
+.mp-cookie-consent__switch.disabled:hover {
+    cursor: not-allowed;
+}
+
+.mp-cookie-consent__switch-checkbox {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.mp-cookie-consent__switch-checkbox:checked + .mp-cookie-consent__switch-toggle {
+    background: #202040;
+}
+
+.mp-cookie-consent__switch-checkbox:checked + .mp-cookie-consent__switch-toggle:before {
+    right: 2px;
+    left: auto;
+}
+
+.mp-cookie-consent__switch-toggle {
+    background: #eeeeee;
+    border-radius: 15px;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.mp-cookie-consent__switch-toggle::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: .3s;
+}
+
+.hidden {
+    display: none;
+}

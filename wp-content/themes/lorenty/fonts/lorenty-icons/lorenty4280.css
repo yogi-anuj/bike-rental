@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "lorenty";
+    src: url("lorenty488c.ttf?af90581f56b9f05f80a829eb9296bf29") format("truetype"),
+url("lorenty488c.woff?af90581f56b9f05f80a829eb9296bf29") format("woff"),
+url("lorenty488c.html?af90581f56b9f05f80a829eb9296bf29") format("woff2");
+}
+
+i[class^="lorenty-icon-"]:before, i[class*=" lorenty-icon-"]:before {
+    font-family: lorenty !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.lorenty-icon-check-mark:before {
+    content: "\f101";
+}
+.lorenty-icon-home:before {
+    content: "\f102";
+}
+.lorenty-icon-instagram:before {
+    content: "\f103";
+}
+.lorenty-icon-mail:before {
+    content: "\f104";
+}
+.lorenty-icon-phone:before {
+    content: "\f105";
+}
+.lorenty-icon-quote:before {
+    content: "\f106";
+}
